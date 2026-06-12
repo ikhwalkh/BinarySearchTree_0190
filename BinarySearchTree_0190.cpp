@@ -64,18 +64,35 @@ public:
     void search(string element, Node *&parent, Node *&currentNode)
     {
         currentNode = ROOT;
-        parent = NULL;
+        parent = nullptr;
 
-        while((currentNode != NULL) &&
+        while((currentNode != nullptr) &&
             (currentNode->info != element))
             {
                 parent = currentNode;
 
                 if (element < currentNode->info)
-                    currentNode = currentNode->leftChild;
+                   currentNode = currentNode->leftChild;
                 else
-                    currentNode = currentNode->rightChild;
-        }
+                   currentNode = currentNode->rightChild;
+            }
     } 
+
+     void inorder(Node *ptr)
+    {
+        if (ROOT == nullptr)
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+
+        if (ptr != nullptr)
+        {
+            inorder(ptr->leftChild);
+            cout << ptr->info << " ";
+            inorder(ptr->rightChild);
+        }
+    }
+
 
 }
