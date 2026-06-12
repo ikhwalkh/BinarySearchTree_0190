@@ -5,4 +5,9 @@ using namespace std;
 class Node{
 
     //Memberi akses modifier mendeklarasi variabel dan object node
+public:
+    string info;
+    Node* leftChild;
+    Node* rightChild;
+    
 }
