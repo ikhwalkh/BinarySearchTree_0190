@@ -19,3 +19,18 @@ public:
         rightChild = r;
     }
 };
+
+// membuat class BinarTree
+class BinaryTree {
+
+    //memberi akses modifier dan deklarasi object
+public:
+   Node* ROOT;
+
+   //membuat constructor dan memberi nilai kepada object Root
+   BinaryTree() {
+    ROOT = nullptr;
+   }
+
+   
+}
