@@ -112,19 +112,23 @@ public:
 
     void postorder(Node *ptr)
     {
-        // perfoms the postorder traveersal of the tree
-        if (ROOT == NULL)
+        // membuat dan mendefinisikan prosedur postorder
+        if (ROOT == nullptr)
         {
             cout << "Tree is empty" << endl;
             return;
         }
 
-        if (ptr != NULL)
+        if (ptr != nullptr)
         {
             postorder(ptr->leftChild);
             postorder(ptr->rightChild);
             cout << ptr->info << " ";
         }
     }
-
 };
+
+int main()
+{
+    BinaryTree 
+}
