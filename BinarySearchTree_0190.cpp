@@ -144,8 +144,15 @@ int main()
         cout << "4. perform postorder traversal" << endl;
         cout << "5. exit" << endl;
         cout << "\nEnter your choice (1-5): ";
+
         char ch;
         cin >> ch;
         cout << endl;
+
+        //membuat conditional statement dari input ch
+        switch (ch)
+        {
+            case '1':
+        }
     }
 }
